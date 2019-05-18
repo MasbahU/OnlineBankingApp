@@ -1,0 +1,34 @@
+package OnlineBankingApp;
+
+import java.io.File;
+import java.util.Scanner;
+
+/**
+ *
+ * @author masbahuddin
+ */
+public class Login {
+    public void run() {
+    Scanner scan = new Scanner (new File());
+    Scanner keyboard = new Scanner (System.in);
+    String user = scan.nextLine();
+    String pass = scan.nextLine(); 
+    
+    String inpUser = keyboard.nextLine();
+    String inpPass = keyboard.nextLine();
+    
+    boolean log=false;
+    
+    System.out.println("Please enter you Login and Password");
+    
+    while(log = false)
+    {
+        if (inpUser.equals(user) && inpPass.equals(pass)) {
+            System.out.print("Login Successful");
+        } else {
+            System.out.print("your error message");
+        }
+    }
+}
+    
+}
