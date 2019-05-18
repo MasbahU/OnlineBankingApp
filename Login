@@ -17,18 +17,20 @@ public class Login {
     String inpUser = keyboard.nextLine();
     String inpPass = keyboard.nextLine();
     
-    boolean log=false;
+    int count = 0
     
     System.out.println("Please enter you Login and Password");
     
-    while(log = false)
+    while(count < 3)
     {
         if (inpUser.equals(user) && inpPass.equals(pass)) {
             System.out.print("Login Successful");
         } else {
-            System.out.print("your error message");
+            System.out.print("Please Try Again");
         }
     }
+    
+    System.out.println("Exceeded the attempt limit, please call support");
 }
     
 }
